@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+ads1015 = "==0.0.5"
+astral = "==2.2"
+cffi = "==1.14.0"
+dataclasses = "==0.7"
+font-roboto = "==0.0.1"
+fonts = "==0.0.3"
+i2cdevice = "==0.0.7"
+ltr559 = "==0.1.1"
+paho-mqtt = "==1.5.0"
+pimoroni-bme280 = "==0.0.2"
+pms5003 = "==0.0.5"
+pycparser = "==2.20"
+pyserial = "==3.4"
+pytz = "==2020.1"
+sounddevice = "==0.3.15"
+smbus = "*"
+
+[requires]
+python_version = "3.6"
