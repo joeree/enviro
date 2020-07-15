@@ -18,19 +18,12 @@ class Barometer:
 
     @property
     def pressure(self):  # hPa float
-        return self._pressure
+        return self._pressure, self._pressure_reading
 
     @pressure.setter
     def pressure(self, value: float):
         self._pressure = value
-
-    @property
-    def pressure_reading(self):  # human-readable string
-        return self._pressure_reading
-
-    @pressure_reading.setter
-    def pressure_reading(self, value: str):
-        self._pressure_reading = value
+        self._pressure_reading = self.analyze_pressure()
 
     def get_pressure(self):
         """ Take pressure reading and record if different than previous reading """
